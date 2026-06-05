@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'counter.dart';
 
-void main(){
+void main() {
   runApp(
     const MaterialApp(
-      debugShowCheckedModeBanner:  false,
-      home:CounterScreen
-    ));
+      debugShowCheckedModeBanner: false,
+      home: CounterScreen(),
+    ),
+  );
 }
