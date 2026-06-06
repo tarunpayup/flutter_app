@@ -15,11 +15,12 @@ class _CountdownScreen extends State<CountdownScreen>{
   @override
   void initState(){
     super.initState();
+    startCountDown();
   }
 
   void startCountDown(){
     timer = Timer.periodic(
-      const Duration(milliseconds: 2000), //To setup the executable time 
+      const Duration(milliseconds: 300), //To setup the executable time 
       (timer){
         if(count>0){
           setState(() {
