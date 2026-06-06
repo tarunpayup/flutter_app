@@ -10,7 +10,7 @@ class CounterText extends StatelessWidget{
       "$count",
       style: TextStyle(
         fontSize: 60,
-        fontWeight: FontWeight.bold
+        fontWeight: FontWeight.bold,
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'counter.dart';
+import 'package:flutter_application_2/counter.dart';
 
 void main() {
   runApp(
