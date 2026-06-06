@@ -32,8 +32,26 @@ class _CountdownScreen extends State<CountdownScreen>{
       
       );
   }
-}
+  @override
+  void dispose(){
+    timer?.cancel();
+    super.dispose();
+  }
 
-/*
-datatype variable 
-*/
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(title: Text("Count down timer"),),
+      body: Center(
+        child: Text(
+          "$count", style: const TextStyle(
+            color: Color(0xFF000000),
+            fontWeight: FontWeight.bold,
+            fontSize: 80.0
+          ),
+        ),
+      ),
+    );
+  }
+
+}
