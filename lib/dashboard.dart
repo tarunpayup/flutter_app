@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/tabs/home.dart';
+import 'package:flutter_application_2/tabs/profile.dart';
 
 //Widgets Categories-> Ready made widgets / Custom Widgets -> Classes
 //Type of widgets -> Stateless widgets and Stateful widgets
@@ -34,17 +36,22 @@ class _DashboardScreenState extends State<DashboardScreen>{
           body: const TabBarView(
             children: [
               HomeTab(),//Constructor -> Widget
+              //Start from here
               ProfileTab(),
-              SettingsTab()
+              //SettingsTab()
             ],
           ),
       ));
   }
 }
 
+<<<<<<< Updated upstream
 class HomeTab extends StatelessWidget{//Stateless Widget -> Parent class
   const HomeTab({super.key});
   
   Widget dashboardCard
   
 }
+=======
+
+>>>>>>> Stashed changes

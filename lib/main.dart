@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/layout.dart';
+import 'package:flutter_application_2/dashboard.dart';
 
 
 void main(){
-  runApp(const MaterialApp(
+  runApp( MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: LayoutScreen(),
+    home: DashboardScreen(),
   ));
 }
