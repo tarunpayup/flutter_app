@@ -44,14 +44,3 @@ class _DashboardScreenState extends State<DashboardScreen>{
       ));
   }
 }
-
-<<<<<<< Updated upstream
-class HomeTab extends StatelessWidget{//Stateless Widget -> Parent class
-  const HomeTab({super.key});
-  
-  Widget dashboardCard
-  
-}
-=======
-
->>>>>>> Stashed changes
