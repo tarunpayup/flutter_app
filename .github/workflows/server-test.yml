@@ -1,0 +1,55 @@
+name: Server Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  server-test:
+
+    runs-on: self-hosted
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Server Information
+        run: |
+          hostname
+          whoami
+          pwd
+
+      - name: Docker
+        run: |
+          docker --version
+          docker compose version
+
+      - name: Java
+        run: |
+          java -version
+
+      - name: Go
+        run: |
+          go version
+
+      - name: Node
+        run: |
+          node -v
+
+      - name: Python
+        run: |
+          python3 --version
+
+      - name: PHP
+        run: |
+          php -v
+
+      - name: Disk Usage
+        run: |
+          df -h
+
+      - name: Memory
+        run: |
+          free -m
